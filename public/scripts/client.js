@@ -71,6 +71,12 @@ $(document).ready(function() {
         type : 'POST',
         url : "http://localhost:8080/tweets",
         data : $("#new-tweet-form").serialize()
+      }).then(function () {
+        $.ajax('http://localhost:8080/tweets', { method: 'GET' })
+          .then(function (data) {
+            let $newTweetElement = createTweetElement(data[data.length - 1]);
+            $('#tweets-container').prepend($newTweetElement);
+          });
       });
     }
   });
