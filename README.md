@@ -24,10 +24,10 @@ Screenshot of desktop version of the homepage
 ![Screen Shot 2021-10-11 at 10 50 28 AM](https://github.com/volkanb/tweeter/blob/master/docs/homepage-desktop.png?raw=true)
 
 Screenshot of tablet version of the homepage
-![Screen Shot 2021-10-11 at 10 50 59 AM](https://user-images.githubusercontent.com/5632196/136812073-9950679b-e97a-4126-918b-de468cef51a2.png)
+![Screen Shot 2021-10-11 at 10 50 59 AM](https://github.com/volkanb/tweeter/blob/master/docs/homepage-tablet.png?raw=true)
 
 Screenshot of an error message
-![Screen Shot 2021-10-11 at 10 51 59 AM](https://user-images.githubusercontent.com/5632196/136812188-46960f0d-efe3-47ca-a2ff-e61f24e45e78.png)
+![Screen Shot 2021-10-11 at 10 51 59 AM](https://github.com/volkanb/tweeter/blob/master/docs/error-message.png?raw=true)
 
 
 ## Dependencies
