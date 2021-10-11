@@ -7,7 +7,7 @@ nav {
   padding-left: 1.5em;
   padding-right: 1.5em;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
