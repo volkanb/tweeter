@@ -70,4 +70,15 @@ const createTweetElement = function (tweetData) {
 $(document).ready(function() {
   // Test / driver code (temporary)
   renderTweets(data);
+
+  // Event listener for form submit
+  $("#new-tweet-form").on('submit', function(e){
+    // validation code here
+    e.preventDefault();
+    $.ajax({
+      type : 'POST',
+      url : "http://localhost:8080/tweets",
+      data : $("#new-tweet-form").serialize()
+    });    
+  });
 });
