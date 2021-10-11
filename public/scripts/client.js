@@ -7,7 +7,7 @@
 /*
  * Helper function that escape unsecure text
  */
-const escape = function (str) {
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -54,7 +54,7 @@ const createTweetElement = function(tweetData) {
  */
 const loadTweets = function() {
   $.ajax('http://localhost:8080/tweets', { method: 'GET' })
-    .then(function (data) {
+    .then(function(data) {
       renderTweets(data);
     });
 };
@@ -65,7 +65,7 @@ $(document).ready(function() {
   loadTweets();
 
   // Event listener for form submit
-  $("#new-tweet-form").on('submit', function(e){
+  $("#new-tweet-form").on('submit', function(e) {
     e.preventDefault();
     // Hide error message
     let errorMessage = $("#error-message");
@@ -77,7 +77,7 @@ $(document).ready(function() {
       // Show error message
       errorMessage.find("span").text("Error: Tweet text cannot be empty!");
       errorMessage.slideDown();
-    } else if(tweetRemainingChars < 0) {
+    } else if (tweetRemainingChars < 0) {
       // Show error message
       errorMessage.find("span").text("Error: Max character limit is exceeded!");
       errorMessage.slideDown();
@@ -86,9 +86,9 @@ $(document).ready(function() {
         type : 'POST',
         url : "http://localhost:8080/tweets",
         data : $("#new-tweet-form").serialize()
-      }).then(function () {
+      }).then(function() {
         $.ajax('http://localhost:8080/tweets', { method: 'GET' })
-          .then(function (data) {
+          .then(function(data) {
             let $newTweetElement = createTweetElement(data[data.length - 1]);
             $('#tweets-container').prepend($newTweetElement);
           });
