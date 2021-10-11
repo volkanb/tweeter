@@ -2,18 +2,21 @@ header {
   height: 400px;
   width: 100%;
   padding-top: 120px;
-  background-color: #f8cc51;
   color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
-  font-size: 1.2em;
-}
-header div {
+  background-color: #b88400;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
-header div img {
+#header-img {
   width: 175px;
   height: 175px;
+  margin-bottom: 1em;
+}
+
+#header-name {
+  font-size: 1.2em;
 }
