@@ -67,13 +67,20 @@ $(document).ready(function() {
   // Event listener for form submit
   $("#new-tweet-form").on('submit', function(e){
     e.preventDefault();
-    // validation code here
+    // Hide error message
+    let errorMessage = $("#error-message");
+    errorMessage.slideUp();
+    // Validation
     const tweetText = $("#new-tweet-form").find("textarea").val();
     const tweetRemainingChars = $("#new-tweet-form").find("output").val();
     if (tweetText === "" || tweetText === null) {
-      alert("Error: Tweet text cannot be empty!")
+      // Show error message
+      errorMessage.find("span").text("Error: Tweet text cannot be empty!");
+      errorMessage.slideDown();
     } else if(tweetRemainingChars < 0) {
-      alert("Error: Max character limit is exceeded!")
+      // Show error message
+      errorMessage.find("span").text("Error: Max character limit is exceeded!");
+      errorMessage.slideDown();
     } else {
       $.ajax({
         type : 'POST',
