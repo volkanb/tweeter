@@ -30,3 +30,12 @@ body {
 * {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/*
+ * main
+ */
+
+main {
+  margin: auto;
+  width: 90%;
+}
