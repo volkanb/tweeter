@@ -4,6 +4,15 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+/*
+ * Helper function that escape unsecure text
+ */
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  console.log(`Escaped: ${div.innerHTML}`);
+  return div.innerHTML;
+};
 
 /*
  * Helper function that appends tweets to DOM
@@ -27,7 +36,7 @@ const createTweetElement = function(tweetData) {
         </div>          
         <span class="tweet-card-user-handle">${tweetData.user.handle}</span>
       </div>
-      <p class="tweet-card-content">${tweetData.content.text}</p>
+      <p class="tweet-card-content">${escape(tweetData.content.text)}</p>
       <hr class="tweet-card-break">
       <div class="tweet-card-footer">
         <span>${timeago.format(tweetData.created_at)}</span>
@@ -58,8 +67,8 @@ $(document).ready(function() {
 
   // Event listener for form submit
   $("#new-tweet-form").on('submit', function(e){
-    // validation code here
     e.preventDefault();
+    // validation code here
     const tweetText = $("#new-tweet-form").find("textarea").val();
     const tweetRemainingChars = $("#new-tweet-form").find("output").val();
     if (tweetText === "" || tweetText === null) {
