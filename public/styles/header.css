@@ -10,3 +10,8 @@ header div {
   justify-content: center;
   align-items: center;
 }
+
+header div img {
+  width: 175px;
+  height: 175px;
+}
