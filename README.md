@@ -28,13 +28,3 @@ Screenshot of tablet version of the homepage
 
 Screenshot of an error message
 ![Screen Shot 2021-10-11 at 10 51 59 AM](https://github.com/volkanb/tweeter/blob/master/docs/error-message.png?raw=true)
-
-
-## Dependencies
-
-- Node.js
-- Express
-- EJS
-- bcrypt
-- body-parser
-- cookie-session
