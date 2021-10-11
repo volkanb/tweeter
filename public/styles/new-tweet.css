@@ -1,0 +1,36 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+}
+
+.new-tweet-form {
+  width: 100%;
+}
+
+.new-tweet-form-textarea {
+  width: 100%;
+  border-top: none;
+  border-bottom: solid black 2px;
+  border-left: none;
+  border-right: none;
+  background-color: #f4f1ec;
+  resize: none;
+  font-weight: bold;
+  height: 40px;
+}
+
+.new-tweet-form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-tweet-form-button {
+  background-color: #4056A1;
+  font-family: 'Bungee', cursive;
+  color: white;
+  border: none;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+}

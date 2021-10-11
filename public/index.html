@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     
     <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/85646434c8.js" crossorigin="anonymous"></script>
@@ -51,12 +52,10 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form action="http://localhost:8080/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div>
-            <button type="submit">Tweet</button>
+        <form action="http://localhost:8080/tweets" method="POST" class="new-tweet-form">
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?" class="new-tweet-form-textarea"></textarea>
+          <div class="new-tweet-form-footer">
+            <button type="submit" class="new-tweet-form-button">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
