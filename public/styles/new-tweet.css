@@ -31,6 +31,11 @@
   border: none;
 }
 
-.counter {
+.counter-black {
   font-family: 'Bungee', cursive;
+}
+
+.counter-red {
+  font-family: 'Bungee', cursive;
+  color: red;
 }
