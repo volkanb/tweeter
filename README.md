@@ -13,5 +13,25 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
+- body-parser
+- chance
 - Express
+- md5
 - Node 5.10.x or above
+
+## Final Product
+
+!["Screenshot of desktop version of the homepage"]()
+
+!["Screenshot of tablet version of the homepage"]()
+
+!["Screenshot of an error message"]()
+
+## Dependencies
+
+- Node.js
+- Express
+- EJS
+- bcrypt
+- body-parser
+- cookie-session
