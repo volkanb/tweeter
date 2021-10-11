@@ -1,0 +1,53 @@
+article {
+  border: solid black 2px;
+  margin-top: 30px;
+  padding: 25px;
+}
+
+article:hover {
+  box-shadow: 10px 10px grey;
+}
+
+.tweet-card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-card-header-avatar-name {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-card-avatar {
+  margin-right: 15px;
+}
+
+.tweet-card-user-handle {
+  color: #bbbbbb;
+}
+
+.tweet-card-content {
+  font-weight: bold;
+}
+
+.tweet-card-break {
+  border: solid black 1px;
+}
+
+.tweet-card-footer {
+  font-size: 0.7em;
+}
+
+.tweet-card-footer i {
+  color: #4056A1;
+}
+
+.tweet-card-footer i:hover {
+  color: #f8cc51;
+}
