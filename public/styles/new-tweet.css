@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.new-tweet-form-label {
+  font-weight: bold;
+}
+
 .new-tweet-form-textarea {
   width: 100%;
   border-top: none;
@@ -15,8 +19,11 @@
   border-right: none;
   background-color: #f4f1ec;
   resize: none;
-  font-weight: bold;
   height: 40px;
+}
+
+.new-tweet-form-textarea:focus {
+  outline: none;
 }
 
 .new-tweet-form-footer {
