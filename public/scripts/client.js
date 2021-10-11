@@ -60,10 +60,18 @@ $(document).ready(function() {
   $("#new-tweet-form").on('submit', function(e){
     // validation code here
     e.preventDefault();
-    $.ajax({
-      type : 'POST',
-      url : "http://localhost:8080/tweets",
-      data : $("#new-tweet-form").serialize()
-    });  
+    const tweetText = $("#new-tweet-form").find("textarea").val();
+    const tweetRemainingChars = $("#new-tweet-form").find("output").val();
+    if (tweetText === "" || tweetText === null) {
+      alert("Error: Tweet text cannot be empty!")
+    } else if(tweetRemainingChars < 0) {
+      alert("Error: Max character limit is exceeded!")
+    } else {
+      $.ajax({
+        type : 'POST',
+        url : "http://localhost:8080/tweets",
+        data : $("#new-tweet-form").serialize()
+      });
+    }
   });
 });
